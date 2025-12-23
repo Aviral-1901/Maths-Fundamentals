@@ -12,3 +12,15 @@ This folder contains Python programs for vector operations and manipulation.
 -> We added the squared components and used np.real() because we squared using np.con() which gives 
    complex number and we only need real number as magnitude and the final magnitude was calculated using np.sqrt() as magnitude = squareRoot(x^2 + y^2 + z^2)
 -> np.linalg.norm(vector) is the numpy method to calculate magnitude easily
+
+
+# Day 2 dot product
+- key learning : dot product is mainly used for finding similarity between two vectors
+                 High positive value : Same direction
+                 Zero : Orthogonal (perpendicular)
+                 High negative value: Different direction
+-  Note: Dot product measures alignment AND magnitude.
+-  Code: For 1D real-valued vectors of the same length, all of the following compute the dot      product:
+        np.dot(v1,v2) 
+        v1 @ v2
+        np.sum(v1 * v2)  
