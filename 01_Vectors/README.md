@@ -24,3 +24,14 @@ This folder contains Python programs for vector operations and manipulation.
         np.dot(v1,v2) 
         v1 @ v2
         np.sum(v1 * v2)  
+
+# Day 3 cross product
+- key learning : cross product takes two vectors and produces a third vector that is             perpendicular   
+                to the plane defined by the inputs
+                c = |a|*|b|sinθ n^
+                c = a X b
+                c = |a|*|b|sinθ direction given by right hand rule
+- Note : Order of the vectors matter and a X b is not equal to b X a
+         a x b = - (b x a)
+         |a x b| = Area of parallelogram
+- Code : np.cross(vectorA, vectorB) calculates cross product
