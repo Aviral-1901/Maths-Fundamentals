@@ -20,3 +20,12 @@
 - if determinant >1, there was expansion of volume an if <1 then compression of volume
 - if determinant = 0, then dimensions collapse, information is lost and the transformation is invertible
 - if determinant is close to 0 but not exactly 0 then inverse exists but is ill-conditioned: small input errors produce large output errors, making the system numerically unstable
+
+# inverse-matrix
+- inverse matrix is unique matrix such that (A^-1) (A) = I 
+- inverse exists if and only if det(A) ≠ 0
+- inverse undoes the geometric action of A (stretch ↔ compress, rotate ↔ reverse rotate, shear ↔ counter-shear)
+- Condition Number (κ): measures how sensitive the solution of a linear system is to small perturbations in inputs or coefficients
+- κ(A) = ||A|| · ||A⁻¹||
+- small determinant suggests possible instability, but condition number quantifies numerical stability
+- explicitly calculating A⁻¹ is often numerically unsafe; solving Ax = b is preferred
