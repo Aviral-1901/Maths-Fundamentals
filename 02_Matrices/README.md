@@ -29,3 +29,14 @@
 - κ(A) = ||A|| · ||A⁻¹||
 - small determinant suggests possible instability, but condition number quantifies numerical stability
 - explicitly calculating A⁻¹ is often numerically unsafe; solving Ax = b is preferred
+
+# change of basis
+- vector is an invariant physical object, only its coordinate representation changes with basis
+- to translate from one basis to another we create a change-of-basis matrix P whose columns are the new basis vectors expressed in the old basis
+- P = [u  v]
+- B = P⁻¹ A P -> we choose P such that B becomes a diagonal matrix and the columns of P are eigenvectors of A
+- In Quantum Mechanics and Fourier Transforms, the Change of Basis Matrix is often Unitary.
+- unitary matrices satisfy U⁻¹ = U† and preserve inner products, energy, and total probability
+- U† means to first transpose the matrix, then conjugate every complex numbers of the matrix
+- change of basis is a passive transformation; the physical vector does not move, only its coordinates change
+
