@@ -40,3 +40,12 @@
 - U† means to first transpose the matrix, then conjugate every complex numbers of the matrix
 - change of basis is a passive transformation; the physical vector does not move, only its coordinates change
 
+# eigen-vectors and eigen-values
+- eigen vector is a non zero vector that when transformed by A remains on its original span  (direction)
+- it is only scaled (and possibly sign-flipped or phase-rotated) not rotated
+- A v = λ v ; v(eigen vector) = the axis of transformation, λ(eigen value) = the scaling factor along that axis
+- if all |λ| < 1 : repeated application of A causes the system to decay to 0 (stable)
+- if all |λ| > 1 : system grows without bound along that eigen-direction (unstable)
+- complex eigenvalues correspond to rotation combined with scaling
+- Sum of Eigenvalues = Trace (Sum of diagonal) of A.
+- product of eigenvalues = determinant of A
