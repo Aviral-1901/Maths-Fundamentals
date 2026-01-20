@@ -49,3 +49,13 @@
 - complex eigenvalues correspond to rotation combined with scaling
 - Sum of Eigenvalues = Trace (Sum of diagonal) of A.
 - product of eigenvalues = determinant of A
+
+# SVD (Singular Value Decomposition)
+- every linear tranformation can be broken down into 3 independent sequential operations; rotation/reflection → scaling → rotation/reflection
+- A = U Σ VT
+- VT = rotates the input vector so it lines up with machine's internal axes
+- Σ = stretches the vector along X and Y axes. No rotation
+- diagonal entries of Σ are singular values; they measure the gain/energy amplification of the transformation
+- U = rotates the stretched result to its final destination angle  
+- SVD maps the unit sphere into an ellipsoid whose principal axes are given by singular vectors
+- singular values are square roots of eigenvalues of AᵀA
