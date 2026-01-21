@@ -59,3 +59,11 @@
 - U = rotates the stretched result to its final destination angle  
 - SVD maps the unit sphere into an ellipsoid whose principal axes are given by singular vectors
 - singular values are square roots of eigenvalues of AᵀA
+
+# Truncated SVD
+- every signal can be modeled as structured signal + unstructured noise
+- signal corresponds to larger singular values and noise corresponds to small singular values
+- denoising is achieved by approximating the data with a lower-rank matrix
+- truncation keeps the largest k singular values and sets the rest to zero
+- truncated SVD produces the optimal rank-k approximation in the least-squares sense (Eckart–Young theorem)
+- for larger datas we use HOSVD (Higher Order SVD) to compress multi dimensional arrays
