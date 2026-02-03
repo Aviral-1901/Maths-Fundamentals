@@ -15,3 +15,10 @@
 - The Gradient (∇): In multi-dimensional space, the derivative becomes a vector of partial derivatives pointing in the direction of Steepest Ascent.
 - Gradient Descent: The fundamental algorithm for AI training. We walk in the direction of −∇
 to find the minimum error.
+
+# Differentiation Amplifies Noise
+- Numerical differentiation acts as high pass filter.
+- In frequency domain, differentiating n times is equivalent to multiplying the signal's spectrum by (jω)^n
+- Tiny high frequency jitters in position result in massive spikes in velocity.
+- As the sampling interval gets smaller, the noise amplification gets larger.
+- Never differentiate raw sensor data. [Signal -> Low Pass filter(smooth) -> Differentiate]
