@@ -22,3 +22,17 @@ to find the minimum error.
 - Tiny high frequency jitters in position result in massive spikes in velocity.
 - As the sampling interval gets smaller, the noise amplification gets larger.
 - Never differentiate raw sensor data. [Signal -> Low Pass filter(smooth) -> Differentiate]
+
+
+# Numerical Integration
+- Integration is mathematical accumulation of values over time. In discrete system, we approximate the area under the curve by summing discrete slice (y⋅Δt)
+- Integral has infinite memory meaning the contents added stay there.
+- Every error or small drift from a sensor is added to the total and saved forever. This leads to integration drift. A tiny constant bias in acceleration results in a position error that grows with time squared.
+
+
+# Partial Derivative and Jacobian
+- Partial derivative is a measurement of change that ignores everything except one variable.
+- When calculating ∂/∂x of an equation, treat other variables (y, z) as constants.
+- Jacobian is a matrix that maps many inputs to many outputs.
+- Columns of jacobian represents inputs and rows represents outputs.
+- Slot(i,j) tells how much output i changes if changed the input j.
