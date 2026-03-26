@@ -36,3 +36,11 @@ to find the minimum error.
 - Jacobian is a matrix that maps many inputs to many outputs.
 - Columns of jacobian represents inputs and rows represents outputs.
 - Slot(i,j) tells how much output i changes if changed the input j.
+
+
+# Gradient
+- Gradient is a vector which is composed of all partial derivatives.
+- Gradient always points in the direction of steepest ascent.
+- Gradient is always perpendicular to contour lines of the function.
+- Contour lines are those where f(x,y) = constant. Walking along this line causes zero altitude change.The gradient is always perpendicular to contour lines.
+- The length of gradient vector represents the maximum rate of change at that point.
