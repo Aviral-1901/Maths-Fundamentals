@@ -44,3 +44,10 @@ to find the minimum error.
 - Gradient is always perpendicular to contour lines of the function.
 - Contour lines are those where f(x,y) = constant. Walking along this line causes zero altitude change.The gradient is always perpendicular to contour lines.
 - The length of gradient vector represents the maximum rate of change at that point.
+
+
+# Chain Rule
+- Chain rule allows for calculation of derivative of nested functions.
+- It helps to see how the output is affected by each variables in the chain.
+- If change flows through a chain (A -> B -> C), multiply the local gradients.
+- If a variable affects the output through different independent paths, we add the gradients of those paths.
