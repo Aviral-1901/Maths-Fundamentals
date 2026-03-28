@@ -51,3 +51,13 @@ to find the minimum error.
 - It helps to see how the output is affected by each variables in the chain.
 - If change flows through a chain (A -> B -> C), multiply the local gradients.
 - If a variable affects the output through different independent paths, we add the gradients of those paths.
+
+
+# Gradient Descent
+- Iterative optimization algorithm used to find the local minimum of a differentiable function
+- θn+1 = θn − α∇J(θn)
+- j(θ) : The loss function(Error) and α : the learning rate
+- we move in direction of negative gradient because gradient always points uphill.
+- As we move near the bottom, the slope(gradient) naturally shrinks causing the algorithm to take smaller, more precise steps.
+- convex function : only one global minimum. Easy to solve
+- Non-convex function : multiple local minima and saddle points.
