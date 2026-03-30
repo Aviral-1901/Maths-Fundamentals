@@ -61,3 +61,13 @@ to find the minimum error.
 - As we move near the bottom, the slope(gradient) naturally shrinks causing the algorithm to take smaller, more precise steps.
 - convex function : only one global minimum. Easy to solve
 - Non-convex function : multiple local minima and saddle points.
+
+
+# Jacobian and Hessian
+- Jacobian is the matrix of all first order partial derivates.
+- Jacobian tells about the sensitivity. It tells how every output reacts to every input.
+- Hessian matrix is the square matrix of all second order partial derivatives.
+- The diagonal of hessian matrix represents pure steepness of each variable.
+- The off-diagonal shows coupling which measures how changing one variable affects another.
+- Newton step : Δθ = −H^−1 ∇f
+- Newton's method reaches truth or minima in O(1) steps but storing hessian requires O(N^2) memory.
