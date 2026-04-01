@@ -14,3 +14,10 @@
 - So we use conjugate of the complex number to get the real number value.
 - Multiplying complex number by its conjugate gives a real number value.
 - To get the conjugate we mirror the complex number to cancel the complex part of it so only the real part remains.
+
+
+# Euler's Formula
+- e^jθ = cos(θ) + jsin(θ)
+- e^jθ represents a vector of length 1 pointing at an angle θ in complex plane.
+- Instead of defining complex numbers like z = a+jb we can define them using their magnitude and phase angle z = r⋅e^jθ
+- In LLMs we use e^jmθ to inject word order into transformer model and the model now can calculate relative distance between any two words by measuring angle between the vectors.
