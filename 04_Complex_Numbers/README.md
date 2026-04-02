@@ -21,3 +21,11 @@
 - e^jθ represents a vector of length 1 pointing at an angle θ in complex plane.
 - Instead of defining complex numbers like z = a+jb we can define them using their magnitude and phase angle z = r⋅e^jθ
 - In LLMs we use e^jmθ to inject word order into transformer model and the model now can calculate relative distance between any two words by measuring angle between the vectors.
+
+
+# Phasors and Wave Addition
+- Handling sine waves (Acos(ωt+ϕ)) is somewhat difficult and adding them requires trignometric identities.
+- To solve this problem we project 1D real wave into 2D complex plane.
+- Using euler's formula e^jωt = cos(ωt)+jsin(ωt) we pretend our real oscillating wave is shadow of rotating complex vector.
+- To solve the calculation with waves we factor out the part containing time (e^jωt) and do the math using the other remaining part which is simpler.
+- Calculus with e^jωt is easier so it somewhat turns our calculus into algebra like d/dt becomes multiplication with jw and integration of dt becomes division with jw which allows to make maths simpler for capacitors and inductors.
