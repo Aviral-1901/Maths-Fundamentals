@@ -29,3 +29,16 @@
 - Using euler's formula e^jωt = cos(ωt)+jsin(ωt) we pretend our real oscillating wave is shadow of rotating complex vector.
 - To solve the calculation with waves we factor out the part containing time (e^jωt) and do the math using the other remaining part which is simpler.
 - Calculus with e^jωt is easier so it somewhat turns our calculus into algebra like d/dt becomes multiplication with jw and integration of dt becomes division with jw which allows to make maths simpler for capacitors and inductors.
+
+
+
+# Hermitian Conjugate (†) and Observables
+- Hermitian Conjugate denoted by † is matrix transpose for complex matrices
+- It does 2 things simultaneously : transpose then conjugate
+- In complex vector, standard dot product fails so we must use dagger(†) on first vector.
+- ⟨u∣v⟩ = u† * v will give a real positive magnitude
+- In quantum mechanics we cannot measure a property directly, we must apply matrix operator to the state vector.
+- Every physical measurement (energy, momentum) must result in a real number
+- The only matrices that give real eigenvalues are hermitian matrices
+- A matrix is hermitian if it is equal to its own dagger : H = H†
+
